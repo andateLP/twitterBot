@@ -44,7 +44,7 @@ def percentage_left(days_past):
 days_left = days_until()
 days_past = days_since()
 left = percentage_left(days_past)
-tweet_text = f"Falta{'n' if days_left != 1 else ''} días para que se vaya Luis. Ya pasó el {left}% de mandato ({days_past} días)."
+tweet_text = f"Falta{'n' if days_left != 1 else ''} días para que se vaya Luis y asuma @OrsiYamandu. Ya pasó el {left}% de mandato ({days_past} días)."
 
 # Función para enviar el tweet
 def send_tweet(tweet_text):
