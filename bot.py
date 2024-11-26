@@ -52,6 +52,4 @@ def send_tweet(tweet_text):
     print("Tweet enviado correctamente.")
 
 # Enviar el tweet
-# send_tweet(tweet_text)
-
-print(tweet_text)
+send_tweet(tweet_text)
