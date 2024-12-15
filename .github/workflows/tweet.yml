@@ -27,8 +27,12 @@ jobs:
         CONSUMER_SECRET: ${{ secrets.CONSUMER_SECRET }}
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         ACCESS_TOKEN_SECRET: ${{ secrets.ACCESS_TOKEN_SECRET }}
+        CONSUMER_KEY_LUIS: ${{ secrets.CONSUMER_KEY_LUIS }}
+        CONSUMER_SECRET_LUIS: ${{ secrets.CONSUMER_SECRET_LUIS }}
+        ACCESS_TOKEN_LUIS: ${{ secrets.ACCESS_TOKEN_LUIS }}
+        ACCESS_TOKEN_SECRET_LUIS: ${{ secrets.ACCESS_TOKEN_SECRET_LUIS }}
       run: |
-        python bot.py
+        python bot.py && python botLuis.py
 
     - name: Tweet success message
       if: success()
